@@ -1,9 +1,12 @@
 package test.testspring.repository;
 
+import org.springframework.stereotype.Repository;
 import test.testspring.domain.Member;
 
 import java.util.*;
 
+
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
