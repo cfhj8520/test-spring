@@ -36,7 +36,8 @@ public class JdbcMemberRepository implements MemberRepository {
         } catch (Exception e) {
             throw new IllegalStateException(e);
         } finally {
-            close(conn, pstmt, rs); }
+            close(conn, pstmt, rs); 
+        }
     }
 
     @Override
